@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html
+    style="box-sizing: border-box;font-family: sans-serif;line-height: 1.15;
+    -webkit-text-size-adjust: 100%;-webkit-tap-highlight-color: rgba(0, 0, 0, 0);font-size: 16px;"
+>
+
+<head>
+    <style>
+
+        hr {
+            border: solid 0.1px #ddd;
+            background-color: #ddd;
+            width: 90%;
+        }
+
+        .cell-data {
+            color: #151515b3; 
+            font-weight: 600;
+        }
+
+    </style>
+</head>
+
+<body
+    style="box-sizing: border-box; margin: 0; font-family: Roboto, sans-serif, Helvetica Neue, Arial, Noto Sans, sans-serif;font-size: .875rem;font-weight: 400;
+    line-height: 1.65;color: #526484;text-align: left; background-color: #fff !important;
+    min-width: 320px;outline: none;"
+>
+
+    <div class="card-inner" style="box-sizing: border-box;padding: 1.25rem;">
+
+        
+        <table class="email-wraper"
+            style="box-sizing: border-box;border-collapse: collapse;background: #f5f6fa;
+            font-size: 14px;line-height: 22px;font-weight: 400;color: #8094ae;width: 100%;"
+        >
+            <tr style="box-sizing: border-box;page-break-inside: avoid;">
+                <td class="py-5"
+                    style="box-sizing: border-box;padding-top: 2.75rem !important;padding-bottom: 2.75rem !important;">
+                    <table 
+                        class="email-header"
+                        style="box-sizing: border-box;border-collapse: collapse;width: 100%;
+                        max-width: 620px;margin: 0 auto;"
+                    >
+                        <tbody style="box-sizing: border-box;">
+                            <tr style="box-sizing: border-box;page-break-inside: avoid;">
+                                <td class="text-center pb-4"
+                                    style="box-sizing: border-box;padding-bottom: 1.5rem !important;
+                                    text-align: center !important;"
+                                >
+                                    <img height="50" src="data:image/png;base64,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" alt="Company logo" />
+                                    <p class="email-title"
+                                        style="box-sizing: border-box;margin-top: 0;margin-bottom: 0;orphans: 3;
+                                        widows: 3;font-size: 16px;color: #754fa3;padding-top: 12px;">
+                                            Jenga school
+                                    </p>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table 
+                        class="email-body"
+                        style="box-sizing: border-box;border-collapse: collapse;
+                        max-width: 620px;margin: 0 auto;background: #ffffff; width: 70%"
+                    >
+
+                    <tbody>
+                        <tr>
+                            <td align="center" style="padding-top: 6px">
+                                <table 
+                                    role="presentation"
+                                    style="width: 75%;border-collapse: collapse;border: none;background-color: white; border-radius: 1px;"
+                                >
+            
+                                    <tr>
+                                        <td style="text-align: left;display: flex;flex-direction: column;align-items: center; padding-top: 1.5em;">
+                                            <img src="./payslip-image.jpg" height="100" style="background-size: cover;"/>
+                                            <p style="color: #422f59;font-size: 14px;font-weight: 600; padding-top: 1em;">
+                                                Payslip for the month of June 09, 2022 </p>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <hr/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="
+                                            padding-inline: 24px;
+                                            display: flex;
+                                            flex-direction: row;
+                                            justify-content: space-between;"
+                                        >
+                                            <table style="width: 100%;">
+                                                <tr>
+                                                    <td class="cell">Name:</td>
+                                                    <td class="cell cell-data" style="float: right; ">Mercy Nyaramba</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">Employee no:</td>
+                                                    <td class="cell cell-data" style="float: right; ">EMC-200</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">ID no:</td>
+                                                    <td class="cell cell-data" style="float: right; ">31233044</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">NSSF no:</td>
+                                                    <td class="cell cell-data" style="float: right; ">31233044</td>
+
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">NHIF no:</td>
+                                                    <td class="cell cell-data" style="float: right; ">31233044</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">Title:</td>
+                                                    <td class="cell cell-data" style="float: right; ">Chief of staff</td>
+                                                </tr>
+                                            </table>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-top: 24px">
+                                            <hr/>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td style="padding-inline: 24px;">
+                                            <table style="width: 100%;border-collapse: collapse;">
+                                                <tr style="border-bottom: solid 0.1px#b3b0b0">
+                                                    <th class="cell cell-data" style="float: left;">Description</th>
+                                                    <th class="cell cell-data" style="text-align: start;">Taxation</th>
+                                                    <th class="cell cell-data" style="float: right;">Pay</th>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">Basic Salary</td>
+                                                    <td class="cell">50,000.00</td>
+                                                    <td class="cell" style="float: right;">50,000.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">Housing Allowance</td>
+                                                    <td class="cell">7,500.00</td>
+                                                    <td class="cell" style="float: right;">7,500.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell">Transport Allowance</td>
+                                                    <td class="cell">5,000.00</td>
+                                                    <td class="cell" style="float: right;">5,000.00</td>
+                                                </tr>
+                                                
+                                                <tr style="border-top: solid 0.1px; border-bottom: solid 0.1px;">
+                                                    <th class="cell cell-data" style="float: left;">Gross Pay</th>
+                                                    <td class="cell cell-data">62,500.00</td>
+                                                    <td class="cell cell-data" style="float: right;">62,500.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell" colspan="2">NSSF</td>
+            
+                                                    <td class="cell" style="float: right;">1080.00</td>
+                                                </tr>
+                                                <tr style="border-top: solid 0.1px; border-bottom: solid 0.1px;">
+                                                    <td class="cell cell-data" colspan="2">Deductions before tax</td>
+            
+                                                    <td class="cell cell-data" style="float: right;">1080.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell" >Deductible relief</td>
+            
+                                                    <td class="cell" style="float: left;" colspan="2">1080.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell" >Taxable income</td>
+            
+                                                    <td class="cell" style="float: left;" colspan="2">61,420.00</td>
+                                                </tr>
+                                                <tr style="border-top: solid 0.1px; border-bottom: solid 0.1px;">
+                                                    <td class="cell cell-data" >PAYE</td>
+            
+                                                    <td class="cell cell-data" style="float: left;" colspan="2">12,490.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell" >Personal Relief</td>
+            
+                                                    <td class="cell" style="float: left;" colspan="2">1408</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell" >Tax relief</td>
+            
+                                                    <td class="cell" style="float: left;" colspan="2">1408</td>
+                                                </tr>
+                                                <tr style="border-top: solid 0.1px; border-bottom: solid 0.1px;">
+                                                    <td class="cell cell-data">PAYE tax</td>
+                                                    <td class="cell cell-data">11,082</td>
+                                                    <td class="cell cell-data" style="float: right;">11,082</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell" colspan="2">Housing</td>
+            
+                                                    <td class="cell" style="float: right;">10,000.00</td>
+                                                </tr>
+                                                <tr>
+                                                    <td class="cell" colspan="2">NHIF</td>
+            
+                                                    <td class="cell" style="float: right;">1,300.00</td>
+                                                </tr>
+                                                <tr style="border-top: solid 0.1px; border-bottom: solid 0.1px;">
+                                                    <td class="cell cell-data" colspan="2">Deductions after Tax</td>
+            
+                                                    <td class="cell cell-data" style="float: right;">11,300.00</td>
+                                                </tr>
+                                                <tr style="border-top: solid 0.1px; border-bottom: solid 0.1px;">
+                                                    <td class="cell cell-data" colspan="2">Net Pay</td>
+            
+                                                    <td class="cell cell-data" style="float: right;">39,038.00</td>
+                                                </tr>
+
+                                                <tr>
+                                                    <td style="padding-top: 14px">
+                                                    </td>
+                                                </tr>
+                                               
+                                                <tr style="border-top: solid 0.1px; border-bottom: solid 0.1px;">
+                                                    <td class="cell cell-data">Contributions to date</td>
+                                                   
+                                                </tr>
+                                            
+                                                <tr>
+                                                    <td class="cell" >NSSF: 4,320.00</td>
+            
+                                                </tr>
+                                                <tr style="border-bottom: solid 0.1px;">
+                                                    <td class="cell" >NHIF: 4,320.00</td>
+                                                </tr>
+            
+                                            </table>
+                                        </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="padding-inline: 24px; padding-bottom: 14px; padding-top: 34px;" class="cell" colspan="2"> Employer's signature: ___________ </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="padding-inline: 24px; padding-bottom: 24px; padding-top: 14px;" class="cell" colspan="2"> Employee's signature: ___________ </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td style="text-align: left;display: flex;flex-direction: column;align-items: center; padding-bottom: 24px;">
+                                           
+                                            <p style="color: #754fa3;font-size: 18px;font-weight: 600;">
+                                                Thank You for your service</p>
+                                        </td>
+                                    </tr>
+            
+                                </table>
+                            </td>
+                        </tr>
+                      
+                    </tbody>
+                       
+                    </table>
+                    <table class="email-footer"
+                        style="box-sizing: border-box;border-collapse: collapse;
+                        width: 100%;max-width: 620px;margin: 0 auto;">
+                        <tbody style="box-sizing: border-box;">
+                        <tr style="box-sizing: border-box;page-break-inside: avoid;">
+                            <td class="text-center pt-4"
+                                style="box-sizing: border-box;padding-top: 1.5rem !important;
+                                text-align: center !important;">
+                                <p class="email-copyright-text"
+                                style="box-sizing: border-box;margin-top: 0;margin-bottom: 1rem;
+                                orphans: 3;widows: 3;font-size: 13px;">
+                                    Powered by <a href="https://seamlesshq.co"
+                                                style="box-sizing: border-box;color: #0971fe;text-decoration: underline
+                                                ;background-color: transparent;transition: color .4s,
+                                                background-color .4s, border .4s, box-shadow .4s;word-break: break-all;">
+                                    SeamlessHQ</a>.
+                                </p>
+                            </td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </td>
+            </tr>
+        </table>
+    </div>
+
+</body>
+
+</html>
